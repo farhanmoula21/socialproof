@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+.container1 > div > p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+h4 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+h5 {
+  color: hsl(333, 80%, 67%);
+  font-weight: 700;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5em;
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  padding: 2em 0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.div1 > h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 900;
+  padding-bottom: 0.5em;
+}
+.div2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.reviews > .stars {
+  background-color: hsl(300, 24%, 96%);
+  margin-left: 1em;
+}
+.reportGuru > .stars {
+  margin-left: 2em;
+  background-color: hsl(300, 24%, 96%);
+}
+.besttech > .stars {
+  margin-left: 4em;
+  max-width: fit-content;
+  background-color: hsl(300, 24%, 96%);
+}
+.stars {
+  padding-bottom: 0.2em;
+  margin-top: 1em;
+}
+
+.container2 > .div {
+  width: 70%;
+  min-height: 400px;
+  display: flex;
+  margin: 0 auto;
+  gap: 1em;
+}
+
+.container2 div > .card1 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.5em;
+  padding: 1em;
+}
+.container2 div > .card2 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.5em;
+  margin-top: 2em;
+  padding: 1em;
+}
+.container2 div > .card3 {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-top: 3em;
+}
+
+.container2 div > p {
+  color: white;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+  max-height: 200px;
+  max-width: 300px;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+img {
+  border-radius: 50%;
+  max-height: 30px;
+}
+
+@media (min-width: 280px) and (max-width: 375px) {
+  .container1,
+  .container2 > .div {
+    padding: 0%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 0;
+  }
+  .stars {
+    margin: 0.5em auto;
+  }
+  .reviews > .stars {
+    margin-left: 0;
+  }
+  .besttech > .stars {
+    margin-left: 0;
+  }
+  .reportGuru > .stars {
+    margin-left: 0;
+  }
+}
